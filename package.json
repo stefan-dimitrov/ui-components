@@ -1,0 +1,63 @@
+{
+  "name": "ui-components",
+  "version": "0.0.1",
+  "private": true,
+  "description": "UI Component Library",
+  "main": "dist/bundle.cjs.js",
+  "scripts": {
+    "eslint:fix": "./node_modules/eslint/bin/eslint.js --fix --config ./.eslintrc.json --ext .js ./src/*",
+    "start": "NODE_ENV=development rollup --config --watch",
+    "build": "NODE_ENV=production rollup -c",
+    "test": "NODE_ENV=test jest",
+    "watch": "NODE_ENV=test jest --watch",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/clouway/ui-components"
+  },
+  "keywords": [
+    "react",
+    "components"
+  ],
+  "author": "developers@clouway.com",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.1.2",
+    "babel-jest": "^22.0.4",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.14.0",
+    "eslint-config-prettier": "^2.9.0",
+    "eslint-plugin-prettier": "^2.4.0",
+    "eslint-plugin-react": "^7.5.1",
+    "jest": "^22.0.4",
+    "prettier": "^1.9.2",
+    "react-dom": "^16.2.0",
+    "react-test-renderer": "^16.2.0",
+    "rollup": "^0.53.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-filesize": "^1.5.0",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "@storybook/react": "^3.3.3",
+    "@storybook/addon-actions": "^3.3.3",
+    "@storybook/addon-links": "^3.3.3"
+  },
+  "dependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0"
+  },
+  "jest": {
+    "setupFiles": [
+      "./src/jest.mock.js"
+    ]
+  }
+}
