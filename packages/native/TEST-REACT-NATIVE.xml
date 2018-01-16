@@ -1,0 +1,6 @@
+<testsuites name="ui-components-native">
+  <testsuite name="/src/Alert/Alert.spec.js" tests="1" errors="0" failures="0" skipped="0" timestamp="2018-01-18T08:33:03" time="4.126">
+    <testcase classname="Alert Componenent -should render text" name="Alert Componenent -should render text" time="3.788">
+    </testcase>
+  </testsuite>
+</testsuites>

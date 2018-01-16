@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true
+  },
+  "extends": [
+    "react-native-prettier"
+  ],
+  "rules": {
+    "import/default": "off",
+    "no-empty-function": "off",
+    "prettier/prettier": ["error", {
+      "singleQuote": true,
+      "semi": false
+    }],
+    "react-native/no-color-literals":"off"
+  }
+}
