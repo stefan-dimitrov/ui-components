@@ -39,6 +39,7 @@
     "react-test-renderer": "16.0.0"
   },
   "dependencies": {
+    "@storybook/addon-options": "^3.3.10",
     "prop-types": "^15.6.0",
     "react": "^16.2.0",
     "react-native-web": "^0.3.1"

@@ -1,7 +1,6 @@
 {
-  "name": "ui-components",
+  "name": "clouway-ui-components",
   "version": "0.0.1",
-  "private": true,
   "description": "UI Component Library",
   "main": "dist/bundle.cjs.js",
   "scripts": {
@@ -9,20 +8,6 @@
     "build": "NODE_ENV=production rollup -c",
     "watch": "NODE_ENV=test jest --watch",
     "release": "np --no-publish --any-branch"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.0",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "prettier": "^1.9.2",
-    "rollup": "^0.53.1",
-    "rollup-plugin-babel": "^3.0.3",
-    "rollup-plugin-commonjs": "^8.2.6",
-    "rollup-plugin-filesize": "^1.5.0",
-    "rollup-plugin-jsx": "^1.0.3",
-    "rollup-plugin-node-resolve": "^3.0.2"
   },
   "repository": {
     "type": "git",
