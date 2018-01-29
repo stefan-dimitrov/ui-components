@@ -1,7 +1,7 @@
 {
-  "name": "react-native-ui-components-native",
+  "name": "clouway-ui-components-native",
   "version": "0.0.1",
-  "description": "UI Component Library",
+  "description": "UI Component Library for RN",
   "private": true,
   "main": "src/index.js",
   "scripts": {
