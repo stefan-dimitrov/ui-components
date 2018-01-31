@@ -58,7 +58,7 @@
   },
   "jest-junit": {
     "suiteName": "ui-components-native",
-    "output": "./TEST-REACT-NATIVE.xml",
+    "output": "./TEST-RESULTS-NATIVE.xml",
     "classNameTemplate": "{classname}-{title}",
     "titleTemplate": "{classname}-{title}",
     "usePathForSuiteName": "true"
