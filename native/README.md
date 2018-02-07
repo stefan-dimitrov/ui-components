@@ -3,12 +3,13 @@ React Native component library for supporting internal and external projects wit
 ## Development Flow
 
 ```bash
-# Continues Development
+# Start storybook at port 7007
 yarn start
+
+# Run storybook on android
+yarn android
 
 # Executing Tests
 yarn test
 
-# Storybook examples
-yarn storybook
 ```
