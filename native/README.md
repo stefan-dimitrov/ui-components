@@ -13,3 +13,16 @@ yarn android
 yarn test
 
 ```
+
+## Release Management
+```
+npm release
+```
+or
+```
+yarn release
+```
+
+Then update your changes in the repository. 
+
+TODO: automate this process

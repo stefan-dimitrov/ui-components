@@ -10,7 +10,8 @@
     "ci": "npm run test && npm run eslint && npm run build",
     "eslint": "./node_modules/eslint/bin/eslint.js --config ./.eslintrc.json --ext .js ./src/*",
     "prestart": "rnstl",
-    "postinstall": "rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json"
+    "postinstall": "rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json",
+    "release": "np --no-publish --any-branch"
   },
   "keywords": [
     "react",
@@ -31,10 +32,11 @@
     "enzyme-adapter-react-16": "^1.0.2",
     "enzyme-to-json": "^3.1.2",
     "eslint": "^4.14.0",
-    "eslint-plugin-prettier": "^2.4.0",
     "eslint-config-react-native-prettier": "^1.0.1",
+    "eslint-plugin-prettier": "^2.4.0",
     "jest": "22.2.0",
     "jest-junit": "^1.5.1",
+    "np": "^2.20.1",
     "prop-types": "^15.6.0",
     "react": "16.2.0",
     "react-dom": "16.2.0",
