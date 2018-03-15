@@ -86,7 +86,7 @@ class Modal extends React.Component {
 
     const { visible } = this.state
     return (
-      <View>
+      <View style={{ width: '100%' }}>
         <RNModal
           animationType={'fade'}
           transparent={true}
