@@ -10,7 +10,6 @@
     "ci": "npm run test && npm run eslint && npm run build",
     "eslint": "./node_modules/eslint/bin/eslint.js --config ./.eslintrc.json --ext .js ./src/*",
     "prestart": "rnstl",
-    "postinstall": "rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json",
     "release": "np --no-publish --any-branch"
   },
   "keywords": [

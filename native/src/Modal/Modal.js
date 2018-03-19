@@ -48,9 +48,7 @@ class Modal extends React.Component {
 
   constructor(props) {
     super(props)
-    this.state = {
-      visible: false
-    }
+    this.state = { visible: false }
   }
 
   open() {
@@ -91,16 +89,14 @@ class Modal extends React.Component {
           animationType={'fade'}
           transparent={true}
           visible={visible}
-          onRequestClose={this.close}
+          onRequestClose={() => this.close()}
         >
           <View style={this.props.containerStyles}>
             <View style={this.props.bodyStyles}>
               {this.props.hasCloseHeader && (
                 <View style={this.props.headerStyles}>
                   <TouchableOpacity onPress={() => this.close()}>
-                    <Icon
-                      name={'close'}
-                    />
+                    <Icon name={'close'} />
                   </TouchableOpacity>
                 </View>
               )}
