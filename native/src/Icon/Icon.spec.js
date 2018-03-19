@@ -4,7 +4,7 @@ import { shallow } from 'enzyme'
 
 describe('Icon Componenent ', () => {
   it('should render component', () => {
-    const wrapper = shallow(<Icon name='alert' />)
+    const wrapper = shallow(<Icon name='adb' />)
     expect(wrapper).toMatchSnapshot()
   })
 })

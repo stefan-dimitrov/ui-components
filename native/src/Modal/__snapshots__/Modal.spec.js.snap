@@ -86,7 +86,7 @@ exports[`(Modal) rendering should render Modal component with header 1`] = `
             onPress={[Function]}
           >
             <Icon
-              family="MaterialCommunityIcons"
+              family="MaterialIcons"
               name="close"
               size={20}
             />

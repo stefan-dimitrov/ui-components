@@ -17,6 +17,10 @@ Wrapper of [oblador/react-native-vector-icons](https://github.com/oblador/react-
 | ``style``  | ``TextStylePropTypes`` | The StyleSheet to apply to the Icon | None                   |
 
 ### Supported font families
+- [MaterialIcons](https://material.io/icons/)
 - [MaterialCommunityIcons](https://materialdesignicons.com/)
 - [FontAwesome](https://fontawesome.com/icons?d=gallery)
+- [SimpleLineIcons](http://simplelineicons.com/)
 - [IonIcons](https://ionicframework.com/docs/ionicons/)
+- [Octicons](https://octicons.github.com/)
+- [Feather](http://feathericons.com/)

@@ -3,7 +3,7 @@
 exports[`Icon Componenent  should render component 1`] = `
 <Icon
   allowFontScaling={false}
-  name="alert"
+  name="adb"
   size={20}
 />
 `;
