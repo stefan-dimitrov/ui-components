@@ -11,7 +11,7 @@ Wrapper of [oblador/react-native-vector-icons](https://github.com/oblador/react-
 | Prop       | Type                   | Description                         | Default                |
 |------------|------------------------|-------------------------------------|------------------------|
 | ``name``   | ``string``             | What icon to show.                  | None                   |
-| ``family`` | ``string``             | What font family is the icon from   | MaterialCommunityIcons |
+| ``family`` | ``string``             | What font family is the icon from   | MaterialIcons          |
 | ``size``   | ``number``             | Size of the icon                    | 20                     |
 | ``color``  | ``string``             | Color of the icon                   | Inherited              |
 | ``style``  | ``TextStylePropTypes`` | The StyleSheet to apply to the Icon | None                   |
