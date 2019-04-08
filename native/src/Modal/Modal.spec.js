@@ -23,7 +23,7 @@ describe('(Modal) rendering', () => {
 
   it('should render Modal component with header', () => {
     const wrapper = shallow(
-      <Modal hasCloseHeader={true} >
+      <Modal hasCloseHeader={true}>
         <Modal.Trigger>
           <TouchableOpacity onPress={() => {}}>
             <Text>trigger</Text>
@@ -36,11 +36,9 @@ describe('(Modal) rendering', () => {
     )
     expect(toJson(wrapper)).toMatchSnapshot()
   })
-  
+
   it('should hide modal when close header is pressed', () => {
-    const wrapper = shallow(
-      <Modal hasCloseHeader={true} />
-    )
+    const wrapper = shallow(<Modal hasCloseHeader={true} />)
     wrapper.setState({ visible: true })
     wrapper
       .find(TouchableOpacity)
@@ -48,6 +46,21 @@ describe('(Modal) rendering', () => {
       .props()
       .onPress()
     expect(wrapper.state().visible).toBe(false)
+  })
+
+  it('calls callback when modal is closed', () => {
+    const callback = jest.fn()
+    const wrapper = shallow(
+      <Modal hasCloseHeader={true} onRequestClose={callback} />
+    )
+    wrapper.setState({ visible: true })
+    wrapper
+      .find(TouchableOpacity)
+      .first()
+      .props()
+      .onPress()
+
+    expect(callback).toHaveBeenCalled()
   })
 
   it('should open modal dialog on press trigger', () => {
@@ -60,6 +73,7 @@ describe('(Modal) rendering', () => {
         </Modal.Trigger>
       </Modal>
     )
+
     wrapper.setState({ visible: false })
     wrapper
       .find(Modal.Trigger)

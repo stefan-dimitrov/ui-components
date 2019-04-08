@@ -11,6 +11,7 @@ exports[`(Modal) rendering should render Modal component 1`] = `
   <Component
     animationType="fade"
     hardwareAccelerated={false}
+    onDismiss={[Function]}
     onRequestClose={[Function]}
     transparent={true}
     visible={false}
@@ -64,6 +65,7 @@ exports[`(Modal) rendering should render Modal component with header 1`] = `
   <Component
     animationType="fade"
     hardwareAccelerated={false}
+    onDismiss={[Function]}
     onRequestClose={[Function]}
     transparent={true}
     visible={false}

@@ -1,5 +1,10 @@
 import React from 'react'
-import { Modal as RNModal, View, ScrollView, TouchableOpacity } from 'react-native'
+import {
+  Modal as RNModal,
+  View,
+  ScrollView,
+  TouchableOpacity
+} from 'react-native'
 import PropTypes from 'prop-types'
 import Icon from '../Icon'
 
@@ -57,6 +62,7 @@ class Modal extends React.Component {
 
   close() {
     this.setState({ visible: false })
+    this.props.onRequestClose()
   }
 
   componentWillReceiveProps(newProps) {
@@ -90,6 +96,7 @@ class Modal extends React.Component {
           transparent={true}
           visible={visible}
           onRequestClose={() => this.close()}
+          onDismiss={this.props.onDismiss}
         >
           <View style={this.props.containerStyles}>
             <View style={this.props.bodyStyles}>
@@ -116,7 +123,9 @@ Modal.propTypes = {
   children: PropTypes.any,
   headerStyles: PropTypes.any,
   hasCloseHeader: PropTypes.bool.isRequired,
-  visible: PropTypes.bool
+  visible: PropTypes.bool,
+  onRequestClose: PropTypes.func,
+  onDismiss: PropTypes.func
 }
 
 Modal.defaultProps = {
@@ -128,7 +137,9 @@ Modal.defaultProps = {
     margin: 0,
     padding: 0,
     borderBottomWidth: 0
-  }
+  },
+  onRequestClose: () => {},
+  onDismiss: () => {}
 }
 
 export default Modal
