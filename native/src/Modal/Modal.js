@@ -42,6 +42,7 @@ class Trigger extends React.Component {
     })
   }
 }
+
 Trigger.propTypes = {
   children: PropTypes.any.isRequired,
   onShowDialog: PropTypes.func
@@ -65,9 +66,9 @@ class Modal extends React.Component {
     this.props.onRequestClose()
   }
 
-  componentWillReceiveProps(newProps) {
-    if (newProps.visible !== this.props.visible) {
-      this.setState({ visible: newProps.visible })
+  componentDidUpdate(prevProps) {
+    if (prevProps.visible !== this.props.visible) {
+      this.setState({ visible: this.props.visible })
     }
   }
 

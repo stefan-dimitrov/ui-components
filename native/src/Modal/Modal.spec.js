@@ -82,4 +82,19 @@ describe('(Modal) rendering', () => {
       .onShowDialog()
     expect(wrapper.state().visible).toBe(true)
   })
+
+  it('should change visibility on props update', () => {
+    const wrapper = shallow(
+      <Modal>
+        <Modal.Trigger>
+          <TouchableOpacity onPress={() => {}}>
+            <Text>test</Text>
+          </TouchableOpacity>
+        </Modal.Trigger>
+      </Modal>
+    )
+    expect(wrapper.state().visible).toBe(false)
+    wrapper.setProps({ visible: true })
+    expect(wrapper.state().visible).toBe(true)
+  })
 })
