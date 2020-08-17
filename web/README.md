@@ -1,24 +1,21 @@
-# ui-componentsweb
+# ui-components-web
 React component library for supporting internal and external projects with it's components.
 
 ## Development Flow
 
 ```bash
-# Continues Development
-yarn start
-
 # Executing Tests
-yarn test
+npm test
 
 # Storybook examples
-yarn storybook
+npm run storybook
 ```
 
 ## Releasing
 
 ```bash
 # Perform Test & Lint & Build
-yarn prerelease
+npm run prerelease
 # Performing Release using np
-yarn release
+npm run release
 ```
